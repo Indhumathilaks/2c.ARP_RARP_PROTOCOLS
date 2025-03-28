@@ -17,7 +17,12 @@ stored.
 5. Map the IP address with its MAC address and return the MAC address to client.
 P
 ## PROGRAM - ARP
+
+
+
 client 
+
+
 ```
 import socket 
 s=socket.socket() 
@@ -32,7 +37,13 @@ while True:
             except KeyError: 
                 c.send("Not Found".encode())
 ```
+
+
+
 server
+
+
+
 ```
 
 import socket 
@@ -45,13 +56,33 @@ while True:
 ```
 
 ## OUPUT - ARP
+
+
+
 client
+
+
+
 ![2carpclient](https://github.com/user-attachments/assets/0800f37d-b1d3-4b09-8229-8aa6800583be)
+
+
+
 server
+
+
+
+
 ![2carpserver](https://github.com/user-attachments/assets/4586baa9-c9ca-4270-80aa-f3efb2b523d4)
 
 ## PROGRAM - RARP
+
+
+
 client
+
+
+
+
 ```
 
 import socket 
@@ -67,7 +98,14 @@ while True:
             except KeyError: 
                 c.send("Not Found".encode())
 ```
+
+
+
+
 server
+
+
+
 ```
 import socket 
 s=socket.socket() 
@@ -78,9 +116,22 @@ while True:
     print("Logical Address",s.recv(1024).decode())
 ```
 ## OUPUT -RARP
+
+
+
 client
+
+
+
+
 ![2crarpclient](https://github.com/user-attachments/assets/197b1efb-87f4-4664-8a6f-b335731fefca)
+
+
+
 server
+
+
+
 ![2crarpserver](https://github.com/user-attachments/assets/4367dbde-e5b3-40ca-bedf-ec67b384d072)
 
 ## RESULT
